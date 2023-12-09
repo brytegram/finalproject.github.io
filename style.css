@@ -50,11 +50,11 @@ figure figcaption {
 	}
 }
 
-@media (prefers-reduced-motion) {
-	body{
-		overflow: hidden;
-	}
-}
+@media (prefers-reduced-motion: reduce) {
+    :root {
+      --animation-duration: 0;
+    }
+  }
 
 @media (prefers-color-scheme: dark) {
 	grid figure{
